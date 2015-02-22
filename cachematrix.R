@@ -1,4 +1,4 @@
-## This program is a set of functions that cache and compute the inverse of a matrix.
+## This program is a set of functions that caches and computes the inverse of a matrix.
 
 CreateCacheMatrix <- function(mtrx = matrix()) {
     inverse <- NULL
@@ -20,7 +20,7 @@ CreateCacheMatrix <- function(mtrx = matrix()) {
 MycacheSolve <- function(mtrx, ...) {
     inverse <- mtrx$getinv()
     if(!is.null(inverse)) {
-        message("Fetching the data from cache...")
+        message("Fetching the data from cache --->>>")
         return(inverse)
     }
     data <- mtrx$get()
